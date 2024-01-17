@@ -1,0 +1,41 @@
+# Exclude specific folder
+pictures/
+images/
+new_images/
+**.png
+
+# Exclude specific file formats
+**.zip
+**.npy
+**.ipynb
+
+# Exclude compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Exclude virtual environment folders (e.g., created by virtualenv or venv)
+venv/
+env/
+.virtualenv/
+
+# Exclude log files
+logs/
+log/
+*.log
+**.out
+
+# Exclude generated documentation
+doc/
+
+# Exclude package build directories
+build/
+dist/
+
+# wandb
+**wandb/
+wandb/*
+**.wandb
+
+# json files (too large anyway)
+**.json
