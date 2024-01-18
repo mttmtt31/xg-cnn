@@ -1,7 +1,7 @@
 #!/bin/bash
+FILE_ID="15jzasl9fucNXaJrZAs9tMKLlCG1gbNnq"
 OUTPUT_FILE="data/shots.json"
 # Use gdown to download the file
-curl -L -s -o "$OUTPUT_FILE" 'https://drive.google.com/uc?id=17FzPzXPstohNNHc-qdeCUKXPOQVqFdwy&confirm=t'
+gdown "https://drive.google.com/uc?id=$FILE_ID" -O "$OUTPUT_FILE"
 
-echo "Downloaded $OUTPUT_FILE"
 
