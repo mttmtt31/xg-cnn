@@ -1,3 +1,7 @@
+<div style='text-align:center;'>
+   <img src='images/sb_logo.png' width=500>
+</div>
+
 | **This project would have not been possible without [StatsBomb open data](https://github.com/statsbomb/open-data).** |
 | --- |
 

@@ -1,9 +1,3 @@
-# Exclude specific folder
-pictures/
-images/
-new_images/
-**.png
-
 # Exclude specific file formats
 **.zip
 **.npy
