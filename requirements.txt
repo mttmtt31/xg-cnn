@@ -1,8 +1,8 @@
-numpy==1.25.2
-pandas==2.0.3
-scikit_learn==1.3.0
-scipy==1.11.4
-statsbombpy==1.11.0
-torch==2.0.1
-tqdm==4.66.1
-wandb==0.15.9
+numpy
+pandas
+scikit_learn
+scipy
+statsbombpy
+torch
+tqdm
+wandb
