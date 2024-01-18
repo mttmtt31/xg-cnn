@@ -1,3 +1,6 @@
+| **This project would have not been possible without [StatsBomb open data](https://github.com/statsbomb/open-data).** |
+| --- |
+
 # xG-CNN
 This repository allows you to fully reproduce the results of our research we submitted to the 10th Workshop on Machine Learning and Data Mining for Sports Analytics (Turin, 2023).
 
@@ -45,7 +48,7 @@ To create the labeled dataset, run:
    ```shell
    python src/utils/create_heatmaps.py
    ```
-
+> NOTE: Should you download our dataset or recreate your own, in the `data` folder you will find a CSV file which allows you to find, for each shot in the dataset, the corresponding match_id and event index, as provided by [StatsBomb](https://github.com/statsbomb/open-data).
 
 # Train the model
 To train the model, run the `main.py` script:
