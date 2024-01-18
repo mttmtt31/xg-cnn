@@ -29,8 +29,8 @@ for i, (shot_name, shot) in enumerate(tqdm(dict_shots.items())):
                 # add the player in the corresponding location, after having discretised it
                 discrete_x = min(math.floor(player['location'][0] / 2), 59)
                 discrete_y = min(math.floor(player['location'][1] / 2), 39)
-                # add the player in the right location, only if they are actually closer to the goal than the ball or if they are in a 1x1 neighbourhood around the ball
-                if (discrete_x >= ball_discrete_x) or (discrete_x >= ball_discrete_x - 1 and abs(discrete_y - ball_discrete_y) <= 1):
+                # add the player in the right location, only if they are actually closer to the goal than the ball
+                if discrete_x >= ball_discrete_x:
                     shot_frame[0, discrete_x, discrete_y] += 1
     
     # all players have been added, crop out the defensive half
@@ -42,5 +42,5 @@ for i, (shot_name, shot) in enumerate(tqdm(dict_shots.items())):
     # add the label (goal or nongoal)
     labels.append(0 if shot_name.startswith('n') else 1)
 
-np.save('data/shots_neighbourhood.npy', all_shot_frames)
-np.save('data/labels_neighbourhood.npy', labels)
+np.save('data/shots.npy', all_shot_frames)
+np.save('data/labels.npy', labels)
