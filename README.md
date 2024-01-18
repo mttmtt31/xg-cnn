@@ -17,7 +17,7 @@ You can train the model yourself either re-creating the input from scratch, or u
 
 # Download JSON File from Google Drive
 
-To access the JSON file used to train the model, you can either manually download it into the `data` folder from [this Google Drive link](https://drive.google.com/file/d/17FzPzXPstohNNHc-qdeCUKXPOQVqFdwy/view?usp=drive_link), or you can do it automatically following the instructions below:
+To access the JSON file used to train the model, you can either manually download it into the `data` folder from [this Google Drive link](https://drive.google.com/file/d/15jzasl9fucNXaJrZAs9tMKLlCG1gbNnq/view?usp=drive_link), or you can do it automatically following the instructions below:
 
 1. **Make the download script (bash) executable** with the following command:
 
