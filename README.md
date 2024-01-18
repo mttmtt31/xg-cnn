@@ -40,6 +40,7 @@ Alternatively, the JSON file can be recreated from scratch (with the most update
    ```
 
 Please note that this piece of code was not optimised, as it was meant to be run only once.
+> NOTE: Should you download our dataset or recreate your own, in the `data` folder you will find a CSV file which allows you to find, for each shot in the dataset, the corresponding match_id and event index, as provided by [StatsBomb](https://github.com/statsbomb/open-data).
 
 # Prepare the dataset
 Once the JSON is downloaded, it needs to be turned into a labeled dataset. Each element of the dataset is a numpy array of shape $2\times30\times40$. The label is $1$ if the shot was converted into a goal, or 0. 
@@ -48,7 +49,7 @@ To create the labeled dataset, run:
    ```shell
    python src/utils/create_heatmaps.py
    ```
-> NOTE: Should you download our dataset or recreate your own, in the `data` folder you will find a CSV file which allows you to find, for each shot in the dataset, the corresponding match_id and event index, as provided by [StatsBomb](https://github.com/statsbomb/open-data).
+This script will save two numpy arrays inside your `data` folder, namely `data/shots.npy` (the dataset that will be feed into the model) and `data/labels.npy` (the labels which will be used to compute the loss).
 
 # Train the model
 To train the model, run the `main.py` script:
