@@ -6,3 +6,4 @@ statsbombpy
 torch
 tqdm
 wandb
+gdown
