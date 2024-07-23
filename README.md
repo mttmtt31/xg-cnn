@@ -6,7 +6,7 @@
 | --- |
 
 # xG-CNN
-This repository allows you to fully reproduce the results of our research we submitted to the [Journal of Sports Analytics](https://journalofsportsanalytics.com/).
+This repository allows you to fully reproduce the results of our research. The full report is available on [ResearchGate](https://doi.org/10.13140/RG.2.2.14691.98080).
 
 You can train the model yourself either re-creating the input from scratch, or using a provided input. The repository also includes a notebook called `Demo XG-CNN` which loads a pre-trained model and computes the xG for every shot taken by Lionel Messi in his last La Liga season in Barcelona.
 
